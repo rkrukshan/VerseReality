@@ -4,7 +4,7 @@ import { BiPlayCircle } from 'react-icons/bi'
 
 const Banner = () => {
     return (
-        <div className="py-12 sm:py-0 relative">
+        <div className="container mx-auto py-12 sm:py-0 relative">
             <div className="container min-h-[620px] flex">
                 <div className="grid grid-col-1 sm:grid-cols-2 gap-8 place-items-center relative z-10">
                     <div>
@@ -13,7 +13,7 @@ const Banner = () => {
                     </div>
 
                     <div>
-                        <div className='order-2 sm:order-1 space-y-5 lg:pr-20 '>
+                        <div className='order-2 sm:order-1 space-y-5 lg:pr-20 relative'>
                             <h1 className='text-4xl font-semibold'>
                                 GET READY TO ENJOY VR <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
                                     GAMES WITH OUR PLATEFORM
@@ -32,6 +32,10 @@ const Banner = () => {
                                     <BiPlayCircle className='text-3xl' />
                                     See Demo
                                 </button>
+                            </div>
+                            <div className="h-[300px] w-[300px] bg-gradient-to-r from-primary
+                                 to-secondary rounded-full absolute bottom-[-15px] left-[300px] blur-3xl opacity-50
+                                  animated-wrapper">
                             </div>
                         </div>
                     </div>
