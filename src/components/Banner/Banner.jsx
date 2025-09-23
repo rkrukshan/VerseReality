@@ -1,6 +1,8 @@
 import React from 'react'
 import BannerPng from '../../assets/images/banner1.png'
 import { BiPlayCircle } from 'react-icons/bi'
+import { motion } from "framer-motion";
+
 
 const Banner = () => {
     return (
@@ -14,18 +16,23 @@ const Banner = () => {
 
                     <div>
                         <div className='order-2 sm:order-1 space-y-5 lg:pr-20 relative'>
-                            <h1 className='text-4xl font-semibold'>
+                            <motion.h1 whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, y: -100 }}
+                                transition={{ duration: 1.5 }} className='text-4xl font-semibold'>
                                 GET READY TO ENJOY VR <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
-                                    GAMES WITH OUR PLATEFORM
+                                    EDUCATION WITH OUR PLATEFORM
                                 </span>
-                            </h1>
-                            <p className='text-justify tracking-tighter'>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Adipisci, aspernatur corrupti velit facilis sint recusandae
-                                voluptate sequi optio dolores autem deleniti,
-                                quos voluptatum? Porro, numquam! Cum dolorum
-                                excepturi modi numquam?
-                            </p>
+                            </motion.h1>
+                            <motion.p initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{
+                                    duration: 0.4,
+                                    scale: { type: "spring", duration: 0.4, bounce: 0.5 },
+                                }}
+                                viewport={{ once: true, amount: 0.2 }} className='text-justify tracking-tighter'>
+                                Welcome to Metaverse VR Education, where classrooms break free from walls.
+                                Through immersive Virtual Reality learning, students don’t just read about history—they walk through it. They don’t just imagine science—they experiment inside it.
+                            </motion.p>
                             <div className='flex gap-6'>
                                 <button className='primary-btn'>Get Started</button>
                                 <button className='flex items-center gap-2'>

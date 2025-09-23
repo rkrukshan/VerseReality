@@ -21,11 +21,11 @@ export const Navbar = () => {
           <div className='flex items-center gap-3 justify-center'>
             <img src={logo} alt={logo} className='h-16' />
             <p className='text-center'>
-              VR <span className='font-bold'>World</span>
+              Meta  <span className='font-bold'>verse</span>
             </p>
           </div>
 
-          {/* Desktop Menu - Centered */}
+          {/* Desktop Menu*/}
           <nav className='hidden md:block'>
             <ul className='flex items-center gap-8 justify-center'>
               {NavLinks.map(({ id, name, link }) => (
@@ -36,7 +36,7 @@ export const Navbar = () => {
 
               {/* DarkMode Feature */}
               <li className='py-4'>
-                <DarkMode />
+                {/* <DarkMode /> */}
               </li>
             </ul>
           </nav>
