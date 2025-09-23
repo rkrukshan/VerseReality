@@ -8,7 +8,7 @@ const Choose = () => {
         <div className='container w-full mx-auto p-9'>
             <h1 className="font-semibold text-3xl text-center mb-6">Why Choose Us</h1>
             <div className='flex justify-center'>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 my-9'>
                     <div className="shadow-lg shadow-gray-400 cursor-pointer flex flex-col items-center justify-center text-center bg-slate-900 w-80 h-80 p-6 rounded-lg hover:bg-gradient-to-r from-primary to-secondary transition-colors duration-500">
                         <div className="mb-4">
                             <FaCamera className='text-blue-500 text-4xl' />

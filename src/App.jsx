@@ -5,6 +5,7 @@ import { Quotes } from './components/Quotes/Quotes'
 import Banner from './components/Banner/Banner'
 import Banner2 from './components/Banner/Banner2'
 import Choose from './components/choose/Choose'
+import { GetStarted } from './components/GetStarted/GetStarted'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Banner />
       <Banner2 />
       <Choose />
+      <GetStarted />
     </main>
   )
 }
