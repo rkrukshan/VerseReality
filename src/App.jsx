@@ -4,6 +4,7 @@ import { Hero } from './components/Hero/Hero'
 import { Quotes } from './components/Quotes/Quotes'
 import Banner from './components/Banner/Banner'
 import Banner2 from './components/Banner/Banner2'
+import Choose from './components/choose/Choose'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Quotes />
       <Banner />
       <Banner2 />
+      <Choose />
     </main>
   )
 }
