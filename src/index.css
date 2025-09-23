@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-parisienne: "Parisienne", cursive;
+
+  --color-primary: #00c2ff;
+  --color-secondary: #dd0bff;
+  --color-dark: #111111;
+
+  --container-padding: 1rem;
+  --container-padding-sm: 3rem;
+}
+
+.primary-btn{
+  @apply bg-gradient-to-r from-primary to-secondary duration-300 py-2 px-6 text-white rounded-full hover:scale-105;
+}
