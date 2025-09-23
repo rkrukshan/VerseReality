@@ -8,7 +8,7 @@ export const Hero = () => {
             <div className="text-white duration-300 overflow-hidden">
                 <div className="container min-h-[700px] flex relative">
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center relative z-10'>
-                        <div className='space-y-5 lg:pr-20'>
+                        <div className='order-2 sm:order-1 space-y-5 lg:pr-20 '>
                             <h1 className='text-4xl font-semibold'>
                                 GET READY TO ENJOY VR <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
                                     GAMES WITH OUR PLATEFORM
@@ -29,9 +29,15 @@ export const Hero = () => {
                                 </button>
                             </div>
                         </div>
-
-                        <img src={HeroPng} alt="" />
+                        <div className='order-1 sm:order-2'>
+                            <img src={HeroPng} alt="" className='max-h-[600px] ' />
+                        </div>
                     </div>
+
+                {/* Animation */}
+
+                <div className="h-[300px] w-[300px] bg-gradient-to-r from-primary to-secondary rounded-full absolute top-0 left-0 blur-3xl animated-wrapper"></div>
+
                 </div>
             </div>
         </div>
