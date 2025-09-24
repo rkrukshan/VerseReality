@@ -21,7 +21,7 @@ export const Navbar = () => {
           <div className='flex items-center gap-3 justify-center'>
             <img src={logo} alt={logo} className='h-16' />
             <p className='text-center'>
-              Meta  <span className='font-bold'>verse</span>
+              Verse  <span className='font-bold'>Reality</span>
             </p>
           </div>
 

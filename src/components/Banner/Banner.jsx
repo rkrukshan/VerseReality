@@ -4,7 +4,7 @@ import { BiPlayCircle } from 'react-icons/bi'
 import { motion } from "framer-motion";
 
 
-const Banner = () => {
+const Banner = ({ togglePlay }) => {
     return (
         <div className="container mx-auto py-12 sm:py-0 relative">
             <div className="container min-h-[620px] flex">
@@ -30,12 +30,12 @@ const Banner = () => {
                                     scale: { type: "spring", duration: 0.4, bounce: 0.5 },
                                 }}
                                 viewport={{ once: true, amount: 0.2 }} className='text-justify tracking-tighter'>
-                                Welcome to Metaverse VR Education, where classrooms break free from walls.
+                                Welcome to VerseReality VR Education, where classrooms break free from walls.
                                 Through immersive Virtual Reality learning, students don’t just read about history—they walk through it. They don’t just imagine science—they experiment inside it.
                             </motion.p>
                             <div className='flex gap-6'>
                                 <button className='primary-btn'>Get Started</button>
-                                <button className='flex items-center gap-2'>
+                                <button onClick={togglePlay} className='flex items-center gap-2'>
                                     <BiPlayCircle className='text-3xl' />
                                     See Demo
                                 </button>

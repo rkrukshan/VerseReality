@@ -14,7 +14,7 @@ const textVariants = {
     },
 };
 
-export const Hero = () => {
+export const Hero = ({ togglePlay }) => {
     return (
         <div className="w-full mx-auto py-12 dark:bg-black dark:text-white duration-300 overflow-hidden">
             <div className="min-h-[700px] max-w-7xl mx-auto flex relative px-4">
@@ -36,14 +36,14 @@ export const Hero = () => {
                                 scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
                             }}
                             className="text-justify tracking-tight">
-                            Welcome to Metaverse where imagination meets innovation.
+                            Welcome to VerseReality where imagination meets innovation.
                             We craft immersive Virtual Reality experiences that transport you beyond the screen—whether it’s gaming, education, business, or exploration.
                         </motion.p>
                         <div className="flex gap-6">
                             <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-secondary text-white font-medium shadow-lg hover:opacity-90">
                                 Get Started
                             </button>
-                            <button className="flex items-center gap-2 text-primary hover:text-secondary duration-300">
+                            <button onClick={togglePlay} className="flex items-center gap-2 text-primary hover:text-secondary duration-300">
                                 <BiPlayCircle className="text-3xl" />
                                 See Demo
                             </button>

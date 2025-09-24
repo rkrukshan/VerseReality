@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="w-7xl container mx-auto">
                 <div className="grid md:grid-cols-4">
                     <div className="grid items-start">
-                        <h1 className="font-bold text-3xl my-2 tracking-tighter">MetaVerse</h1>
+                        <h1 className="font-bold text-3xl my-2 tracking-tighter">VerseReality</h1>
                         <motion.p initial={{ opacity: 0, scale: 0 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{
