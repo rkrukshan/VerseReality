@@ -17,7 +17,6 @@ export const Navbar = () => {
     <div className='container w-full mx-auto relative z-[9999] text-black dark:text-white'>
       <div className='container py-2 md:py-0'>
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center gap-4'>
-          {/* Logo Section - Centered on mobile, left on desktop */}
           <div className='flex items-center gap-3 justify-center'>
             <img src={logo} alt={logo} className='h-16' />
             <p className='text-center'>
@@ -25,7 +24,6 @@ export const Navbar = () => {
             </p>
           </div>
 
-          {/* Desktop Menu*/}
           <nav className='hidden md:block'>
             <ul className='flex items-center gap-8 justify-center'>
               {NavLinks.map(({ id, name, link }) => (
@@ -34,17 +32,15 @@ export const Navbar = () => {
                 </li>
               ))}
 
-              {/* DarkMode Feature */}
               <li className='py-4'>
                 {/* <DarkMode /> */}
               </li>
             </ul>
           </nav>
 
-          {/* Mobile Menu - Centered */}
           <div className='md:hidden block w-full'>
             <div className="flex justify-center items-center gap-4">
-              <DarkMode />
+              {/* <DarkMode /> */}
 
               {
                 showMenu ? <HiMenuAlt1 className='cursor-pointer' size={30}
@@ -52,7 +48,6 @@ export const Navbar = () => {
               }
             </div>
 
-            {/* Mobile Dropdown Menu */}
             {showMenu && (
               <div className="absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-lg">
                 <ul className='flex flex-col items-center gap-4 py-4'>
